@@ -32,10 +32,22 @@ body {
 }
 
 .glass-panel {
-  backdrop-filter: blur(40px);
-  background: #000000;
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.4);
+  /* Much more transparent to see stars */
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 40px 120px rgba(0, 0, 0, 1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add a glossy shine overlay to panels */
+.glass-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 40%, transparent 100%);
+  pointer-events: none;
 }
 
 /* Silver Glow Utility */
@@ -73,7 +85,7 @@ body {
 }
 
 .bg-void {
-  background: #000000;
+  background: transparent !important;
 }
 
 /* Noise overlay purged for deep black purity */
