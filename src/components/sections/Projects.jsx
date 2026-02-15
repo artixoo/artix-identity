@@ -71,9 +71,8 @@ const Projects = () => {
                             <p className="font-sans text-sm text-white/50 leading-relaxed mb-12 opacity-60 group-hover:opacity-100 transition-opacity">
                                 {p.desc}
                             </p>
-                            <div className="flex items-center gap-2 group-hover:gap-4 transition-all duration-500">
-                                <div className="w-8 h-[1px] bg-white/20 group-hover:bg-white group-hover:w-12 transition-all"></div>
-                                <span className="text-meta opacity-20 group-hover:opacity-100 italic">View Protocol</span>
+                            <div className="flex items-center gap-4 transition-all duration-500">
+                                <span className="text-meta opacity-80 group-hover:opacity-100 italic">View Protocol</span>
                             </div>
 
                             {/* Hover Glow */}

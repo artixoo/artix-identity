@@ -31,20 +31,21 @@ body {
 
 .text-display {
   font-family: var(--font-sans);
+  font-weight: 600;
+  /* Increased weight for clarity */
 }
 
 .glass-panel {
-  backdrop-filter: blur(8px);
-  /* Low blur prevents the grey 'haze' over stars */
-  background: rgba(0, 0, 0, 0.85);
-  /* Denser black for 'Glossy Obsidian' effect */
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  /* High contrast silver edge */
+  backdrop-filter: none;
+  /* Removed blur to eliminate greyish haze over stars */
+  background: rgba(0, 0, 0, 0.98);
+  /* Near-solid black for deep 'Glossy Obsidian' look */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  /* High-contrast sharp silver edge */
   box-shadow: 0 40px 150px rgba(0, 0, 0, 1);
   position: relative;
   overflow: hidden;
   color: #ffffff;
-  /* Explicitly white text */
 }
 
 /* Enhanced Metallic Glint */
@@ -99,10 +100,26 @@ body {
   display: none;
 }
 
-/* KILLS ANY REMAINING BLUE GLOW AT BODY LEVEL */
 html,
 body {
   background: #000000 !important;
+  color: #ffffff;
+}
+
+/* Global Visibility Boosters */
+p {
+  color: rgba(255, 255, 255, 0.85) !important;
+  /* Force high visibility on all paragraphs */
+  font-weight: 400;
+}
+
+.text-white\/40,
+.text-white\/50,
+.text-white\/60,
+.opacity-40,
+.opacity-60 {
+  opacity: 1 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 canvas {
