@@ -147,7 +147,11 @@ const TacticalBot = () => {
                                     ? 'bg-white/10 text-white border border-white/5 font-sans'
                                     : 'bg-transparent text-white/90 font-mono border-l-2 border-white/20 pl-4 bg-white/[0.02]'
                                     } shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300`}>
-                                    {msg.text}
+                                    {msg.role === 'bot' ? (
+                                        <div dangerouslySetInnerHTML={{ __html: msg.text }} />
+                                    ) : (
+                                        msg.text
+                                    )}
                                 </div>
                             </div>
                         ))}
