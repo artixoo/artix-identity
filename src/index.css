@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  /* True Obsidian Palette (Neutral) */
+  --color-bg-void: #000000;
+  --color-bg-glass: rgba(10, 10, 10, 0.9);
+  /* Pure Neutral Black */
+  --color-glass-border: rgba(255, 255, 255, 0.12);
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #aaaaaa;
+  --color-accent: #E2E2E2;
+  /* Metallic Silver */
+  --color-accent-glow: rgba(255, 255, 255, 0.15);
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: var(--color-bg-void);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+.text-display {
+  font-family: var(--font-sans);
+}
+
+.glass-panel {
+  backdrop-filter: blur(40px);
+  background-color: var(--color-bg-glass);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 1);
+}
+
+/* Silver Glow Utility */
+.silver-glow {
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+/* Global Silver Vignette Override (To purge any persistent blue) */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: inset 0 0 150px rgba(255, 255, 255, 0.05);
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.silver-border-glow {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.section-padding {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+}
+
+.text-meta {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--color-accent);
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.bg-void {
+  background: #000000;
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.015;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3BaseFilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* KILLS ANY REMAINING BLUE GLOW AT BODY LEVEL */
+html,
+body {
+  background: #000000 !important;
+}
+
+canvas {
+  filter: grayscale(1) brightness(0.8) blur(0.5px);
+}
+
+::selection {
+  background-color: #ffffff;
+  color: #000000;
+}
