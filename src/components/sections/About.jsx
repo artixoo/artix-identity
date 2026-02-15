@@ -105,13 +105,12 @@ const About = () => {
                             </div>
                         </a>
 
-                        {/* Abstract Silver Glow in Corner */}
-                        <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-white/5 rounded-full blur-[100px] pointer-events-none transition-all duration-1000"></div>
                     </div>
                 </div>
-
             </div>
-        </section>
+
+        </div>
+        </section >
     );
 };
 

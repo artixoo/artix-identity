@@ -29,7 +29,6 @@ function App() {
 
       <SmoothScroll>
         <TransitionOverlay />
-        <div className="noise-overlay fixed inset-0 pointer-events-none z-50 opacity-[0.012] mix-blend-overlay"></div>
 
         <main className="relative z-10">
           <section id="hero"><Hero /></section>

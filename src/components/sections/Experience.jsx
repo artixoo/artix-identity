@@ -33,7 +33,7 @@ const Experience = () => {
     ];
 
     return (
-        <section ref={sectionRef} className="section-padding bg-transparent px-6 md:px-24 border-t border-white/5">
+        <section ref={sectionRef} className="section-padding bg-transparent px-6 md:px-24">
             <div className="max-w-screen-xl mx-auto">
                 <span className="text-meta block mb-24 text-center silver-glow opacity-40">03 / My Protocol History</span>
 
