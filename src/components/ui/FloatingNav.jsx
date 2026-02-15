@@ -10,7 +10,7 @@ const FloatingNav = () => {
         { label: '03 / Exp', target: 'experience' },
         { label: '04 / Skills', target: 'skills' },
         { label: '05 / Certs', target: 'certifications' },
-        { label: '06 / CTF', target: 'achievements' },
+        { label: '06 / Wins', target: 'achievements' },
         { label: '07 / Ops', target: 'projects' },
         { label: '08 / Link', target: 'contact' }
     ];

@@ -34,7 +34,7 @@ const Achievements = () => {
     return (
         <section ref={sectionRef} className="section-padding bg-transparent px-6 md:px-24">
             <div className="max-w-screen-xl mx-auto">
-                <span className="text-meta block mb-20 text-center italic silver-glow opacity-40">06 / Tactical Triumphs</span>
+                <span className="text-meta block mb-20 text-center italic silver-glow opacity-40">06 / Wins</span>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {achievements.map((ach, i) => (

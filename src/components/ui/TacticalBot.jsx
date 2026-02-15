@@ -41,7 +41,7 @@ const TacticalBot = () => {
         {
             q: "Where can I see your resume?",
             keywords: ["resume", "cv", "pdf", "experience"],
-            a: "You can find my detailed experience in the 'Tactical History' section. Alternatively, click here to view my full CV: <a href='/resume.pdf' target='_blank' rel='noopener noreferrer' class='text-white underline silver-glow'>View Resume</a>"
+            a: "You can find my detailed experience in the 'Wins' and 'Experience' sections. Alternatively, click here to view my full CV: <a href='/resume.pdf' target='_blank' rel='noopener noreferrer' class='text-white underline silver-glow'>View Resume</a>"
         },
         {
             q: "What do you do for fun?",
