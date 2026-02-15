@@ -91,9 +91,6 @@ const Contact = () => {
     return (
         <section ref={sectionRef} id="contact" className="section-padding bg-void relative px-6 md:px-24">
 
-            {/* Editorial Line Reveal */}
-            <div ref={lineRef} className="w-full h-[1px] bg-white/5 origin-left mb-32"></div>
-
             <div ref={contentRef} className="max-w-screen-xl mx-auto flex flex-col items-center">
 
                 <div className="text-center mb-32">

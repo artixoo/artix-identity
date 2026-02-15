@@ -7,8 +7,10 @@
   /* Pure Neutral Black */
   --color-glass-border: rgba(255, 255, 255, 0.1);
   --color-text-primary: #ffffff;
-  --color-text-secondary: #aaaaaa;
-  --color-accent: #E2E2E2;
+  --color-text-secondary: #eeeeee;
+  /* Brighter for readability */
+  --color-accent: #ffffff;
+  /* Pure silver/white */
   /* Metallic Silver */
   --color-accent-glow: rgba(255, 255, 255, 0.1);
 
@@ -32,21 +34,25 @@ body {
 }
 
 .glass-panel {
-  backdrop-filter: blur(20px);
-  background: rgba(0, 0, 0, 0.4);
-  /* Much more transparent to see stars */
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  /* Low blur prevents the grey 'haze' over stars */
+  background: rgba(0, 0, 0, 0.85);
+  /* Denser black for 'Glossy Obsidian' effect */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  /* High contrast silver edge */
+  box-shadow: 0 40px 150px rgba(0, 0, 0, 1);
   position: relative;
   overflow: hidden;
+  color: #ffffff;
+  /* Explicitly white text */
 }
 
-/* Add a glossy shine overlay to panels */
+/* Enhanced Metallic Glint */
 .glass-panel::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 40%, transparent 100%);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.15) 0%, transparent 45%);
   pointer-events: none;
 }
 
