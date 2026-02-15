@@ -15,8 +15,8 @@ const TacticalBot = () => {
     const faqData = [
         {
             q: "How can I contact you?",
-            keywords: ["contact", "email", "phone", "reach", "signal", "whatsapp"],
-            a: "You can reach me directly at utx1zz@gmail.com or via WhatsApp at +91 85448 83030. I'm also active on LinkedIn and GitHub!"
+            keywords: ["contact", "email", "reach", "signal"],
+            a: "You can reach me directly at utx1zz@gmail.com. I'm also active on LinkedIn and GitHub!"
         },
         {
             q: "What is your tech stack?",

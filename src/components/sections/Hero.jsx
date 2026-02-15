@@ -49,7 +49,6 @@ const Hero = () => {
 
                     <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-30 hover:opacity-100 transition-opacity duration-700">
                         <a href="mailto:utx1zz@gmail.com" className="text-meta !text-[11px] hover:text-white hover:silver-glow transition-all">utx1zz@gmail.com</a>
-                        <a href="tel:+916287534325" className="text-meta !text-[11px] hover:text-white transition-all">+91 62875 34325</a>
                         <a href="https://www.linkedin.com/in/utkarsh-pratham/" target="_blank" className="text-meta !text-[11px] hover:text-white transition-all">LinkedIn</a>
                     </div>
                 </div>

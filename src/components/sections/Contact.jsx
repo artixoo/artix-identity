@@ -42,18 +42,6 @@ const Contact = () => {
 
     const socials = [
         {
-            name: 'WhatsApp',
-            link: 'https://wa.me/916287534325',
-            protocol: 'WA.ME',
-            icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-14.7 8.38 8.38 0 0 1 3.8.9L21 3z"></path>
-                    <path d="M11 16c0-1.1-.9-2-2-2"></path>
-                    <path d="M15 12a2 2 0 0 0-2-2"></path>
-                </svg>
-            )
-        },
-        {
             name: 'Email',
             link: 'mailto:utx1zz@gmail.com',
             protocol: 'SMTP',
