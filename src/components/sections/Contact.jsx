@@ -105,7 +105,7 @@ const Contact = () => {
                 </div>
 
                 {/* Tactical Social Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-6 w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-5xl">
                     {socials.map((social, i) => (
                         <a
                             key={i}
