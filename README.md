@@ -1,4 +1,12 @@
-# Utkarsh Pratham | Portfolio
+# ⬛ ARTIX IDENTITY
+
+> `whoami` -> artix
+
+```
+Accessing mainframe...
+> Connection established.
+```
+
 
 A premium, tactical cybersecurity specialist portfolio built with React, Vite, and GSAP animations.
 
@@ -38,3 +46,8 @@ The built files in `dist/` can be deployed to any static hosting service.
 ---
 
 **XAENITHRA // SIGINT**
+
+---
+*Note: This is a legacy repository from my previous profile. I changed my GitHub account, so it has been pushed here lately.*
+
+**Contact:** [artix@outlook.in](mailto:artix@outlook.in) | `// EOF`
